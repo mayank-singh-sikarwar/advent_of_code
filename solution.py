@@ -34,3 +34,35 @@ print(i)
 print(sum_list)
 print(increased)
 print(decreased)
+
+
+
+###############################################################################
+path = "/Users/mayanksinghsikarwar/Elements/advent_of_code/Data/day2_input.txt"
+
+with open(path, "r") as file:
+    input = [x.strip('\n') for x in file.readlines()]
+
+print(input)
+
+input[0][0] + input[3][-1]
+
+x = 0
+y = 0
+coordinate = -1
+depth = 0
+
+for i in range(len(input)):
+    if input[i][0] == 'f':
+        x = x + int(input[i][coordinate])
+        depth = depth + y*int(input[i][coordinate])
+    elif input[i][0] == 'd':
+        y = y + int(input[i][coordinate])
+    else:
+        y = y - int(input[i][coordinate])
+
+print(x)
+print(depth)
+print(depth*x)
+
+
