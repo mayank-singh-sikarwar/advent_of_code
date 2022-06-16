@@ -65,4 +65,19 @@ print(x)
 print(depth)
 print(depth*x)
 
+#################################################################
+#problem 3 part 1
+#################################################################
+path = "/Users/mayanksinghsikarwar/Elements/advent_of_code/Data/day3_input.txt"
+#reading file and storing input data into a list
+
+with open(path, "r") as file:
+    input = [ x.strip() for x in file.readlines()]
+print(input[0])
+print(len(input))
+
+print(input[0][0])
+
+def gamma_rate(input):
+    digit
 
