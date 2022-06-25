@@ -78,6 +78,25 @@ print(len(input))
 
 print(input[0][0])
 
-def gamma_rate(input):
-    digit
+class ReadInput():
+    
+    def __init__(self, path = "/Users/mayanksinghsikarwar/Elements/advent_of_code/Data/day3_input.txt"):
+        print("Input object created")
+        print("file to be read",path)
+        self.path = path
+
+    def input_to_list(self):
+        with open(self.path, "r") as file:
+            input = [x.strip() for x in file.readlines()]
+        print("length of the created =",len(input))
+        return input
+
+Input_object = ReadInput()
+
+input = (Input_object.input_to_list())
+
+
+
+
+
 
